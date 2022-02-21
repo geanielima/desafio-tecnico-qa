@@ -34,7 +34,7 @@ Passo a passo para executar os testes:
 para rodar o relatório no projeto basta utilizar os comandos:
 
 1. npm run test esse comando irá limpar os relatórios antigos do projeto, iniciar os testes em modo headless e em seguida gerar os resultados do relatório.
-2. em seguida para visualizar o relatório, podemos utilizar o comando npm run allure:open para visualizar o relatório.
+2. em seguida para visualizar o relatório, podemos utilizar o comando npm run allure:open.
  
  
 
