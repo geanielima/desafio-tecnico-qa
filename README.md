@@ -16,12 +16,12 @@ Passo a passo para executar os testes:
 <li>npm install</li>
 
 2. Executar os testes no modo interativo
-<li>npm run cypress:open<li>
+<li>npm run cypress:open</li>
 
 
 <h2 align="center"> CI/CD </h2>
 
-<li>na parte de integração contínua foi utilizado o actions do git hub, que está configurado para rodar os testes a cada push enviado<li>
+<li>na parte de integração contínua foi utilizado o actions do git hub, que está configurado para rodar os testes a cada push enviado</li>
 
 
 
