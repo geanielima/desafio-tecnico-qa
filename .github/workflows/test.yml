@@ -1,0 +1,25 @@
+name: Execução de testes na pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 9,11,15,18 * * 1,2,3,4,5'
+
+jobs:
+  cypress-run:
+    run-on: ubuntu-latest
+
+    steps:
+      - name: checkout projeto
+        uses: actions/checkout@v2
+      
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          build: npm run build
+          start: npm start
+
+      
