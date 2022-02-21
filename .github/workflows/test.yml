@@ -1,0 +1,29 @@
+name: Execução de testes na pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 9,11,15,18 * * 1,2,3,4,5'
+
+jobs:
+  e2e-tests:
+    run-on: ubuntu-latest
+
+    steps:
+      - name: checkout projeto
+        uses: actions/checkout@v2
+      
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.2.0
+        with:
+          node-version: ${{ matrix.node-version }}
+      
+      - name: install dependecies
+        run: npm install
+
+     - name: Run testes GUI
+       run: npm run cypress:open
