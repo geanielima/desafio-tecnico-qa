@@ -344,7 +344,7 @@ describe("Crud da api graphql", () => {
       body: JSON.stringify({
         query: `
           mutation {
-              update_users(where: {id: {_eq: "c53997cf-0e77-4d29-94ac-cdd15b79636d"}}, _set: {name: "Daniel"}) {
+              update_users(where: {id: {_eq: "6b95c1a5-3fe9-4e1d-8cfa-90c605125088"}}, _set: {name: "Daniel"}) {
                 returning {
                   id
                   name
@@ -374,7 +374,7 @@ describe("Crud da api graphql", () => {
       body: JSON.stringify({
         query: `
           mutation {
-              update_users(where: {id: {_eq: "c53997cf-0e77-4d29-94ac-cdd15b79636d"}}, _set: {name: "Sandy"}) {
+              update_users(where: {id: {_eq: "6b95c1a5-3fe9-4e1d-8cfa-90c605125088"}}, _set: {name: "Sandy"}) {
                 affected_rows
               }
             }

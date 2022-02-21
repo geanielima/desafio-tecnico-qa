@@ -10,7 +10,11 @@ describe("Testing todo-list", () => {
     for (let i = 0; i < 4; i++) {
       cy.get(".new-todo")
         .should("be.visible")
-        .type(`${i + 1} - ${randomWord}{enter}`);
+        .type(`${randomWord}{enter}`);
+    }
+
+    for (let i = 0; i < 3; i++) {
+      cy.get(".todo-list > li > input").should('have.value',`${randomWord}`);   
     }
   });
 

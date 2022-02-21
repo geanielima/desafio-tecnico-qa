@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-describe("Testando api rick and morty", () => {
-  it("Returns episodes, characters and location", () => {
+describe("Testing api rick and morty", () => {
+  it.only("Returns episodes, characters and location", () => {
     cy.request({
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -31,9 +31,9 @@ describe("Testando api rick and morty", () => {
             `,
       }),
     }).then((response) => {
-      console.log(response.body);
       expect(response.status).to.eql(200);
       expect(response.body.data).to.have.property("episodesByIds");
+      expect(response.body.data.episodesByIds).have.length(2);
     });
   });
 
@@ -45,12 +45,13 @@ describe("Testando api rick and morty", () => {
       body: JSON.stringify({
         query: `
           {
-              characters (page: 2, filter: {species: "Human"}) {
+              characters (page: 2, filter: {species: "Animal"}) {
                 info {
                   pages
                 }
                 results {
                   name
+                  species
                   episode {
                     name
                     episode
@@ -62,9 +63,11 @@ describe("Testando api rick and morty", () => {
             `,
       }),
     }).then((response) => {
-      console.log(response.body.data);
       expect(response.status).to.eql(200);
       expect(response.body.data).to.have.property("characters");
+      response.body.data.characters.results.forEach((el) => {
+        expect(el.species).to.eql("Animal");
+      });
     });
   });
 });
