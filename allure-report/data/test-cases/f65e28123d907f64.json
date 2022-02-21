@@ -1,0 +1,790 @@
+{
+  "uid" : "f65e28123d907f64",
+  "name" : "create users",
+  "fullName" : "create users",
+  "historyId" : "b58dbed5e3107010da888ee59000deca",
+  "time" : {
+    "start" : 1645415396915,
+    "stop" : 1645415397619,
+    "duration" : 704
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 200 https://api.spacex.land/graphql/",
+      "time" : {
+        "start" : 1645415396933,
+        "stop" : 1645415397500,
+        "duration" : 567
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **{ Object (insert_users) }** to have property **insert_users**",
+      "time" : {
+        "start" : 1645415397611,
+        "stop" : 1645415397611,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "{\n  \"insert_users\": {\n    \"returning\": [\n      {\n        \"name\": \"Cypress\",\n        \"id\": \"8f3d51bc-ec2b-4a22-a441-95a11250a7e1\",\n        \"rocket\": \"Cypress auto stub rocket\",\n        \"timestamp\": \"2022-02-17T15:52:31.407177+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"Gabriel\",\n        \"id\": \"6625cf80-f929-4ea9-b07d-b046f1ebc8e4\",\n        \"rocket\": \"My awesome rocket\",\n        \"timestamp\": \"2022-02-17T15:52:45.820647+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"Bas\",\n        \"id\": \"cc079b9d-3098-4c6c-9d62-36358cf2ed57\",\n        \"rocket\": \"My awesome rocket\",\n        \"timestamp\": \"2022-02-17T15:53:20.277116+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"Bas\",\n        \"id\": \"214c9e50-3912-41bc-99fa-0370b686571d\",\n        \"rocket\": \"My awesome rocket\",\n        \"timestamp\": \"2022-02-17T15:53:46.324431+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"USER\",\n        \"id\": \"9b0b382f-5f36-4370-a2a7-428e6582519e\",\n        \"rocket\": \"rocket\",\n        \"timestamp\": \"2022-02-17T16:05:04.737962+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"USER\",\n        \"id\": \"e1c2300f-7e62-4813-b964-9ee6242e2461\",\n        \"rocket\": \"rocket\",\n        \"timestamp\": \"2022-02-17T16:05:48.094794+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"USER\",\n        \"id\": \"42f78a25-f66c-4f46-9db5-ff64e04c5f17\",\n        \"rocket\": \"rocket\",\n        \"timestamp\": \"2022-02-17T16:07:35.854289+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"USER\",\n        \"id\": \"ce8ba466-8de5-4af7-bd4b-7f785a9d96f5\",\n        \"rocket\": \"rocket\",\n        \"timestamp\": \"2022-02-17T16:10:23.160816+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"USER\",\n        \"id\": \"b33f0e67-7c98-44c0-bcc9-7ccce9668bd5\",\n        \"rocket\": \"rocket\",\n        \"timestamp\": \"2022-02-17T16:16:23.776295+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"USER\",\n        \"id\": \"974324c7-c3a4-45f1-aeb0-e4bf6afcbdd6\",\n        \"rocket\": \"rocket\",\n        \"timestamp\": \"2022-02-17T16:16:52.228846+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"Operator\",\n        \"id\": \"a93e5cbb-3d20-42d9-af0e-c14ba36f0a52\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T16:47:37.471553+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"Operator\",\n        \"id\": \"9786e336-d0f8-4d1e-9940-859c0f8c0124\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T16:48:07.849591+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"Operator\",\n        \"id\": \"9f4bcb07-5be8-4bdb-b3af-f84a183edc33\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T16:48:09.368103+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"Operator\",\n        \"id\": \"7e98183d-8e83-4db0-95ae-b736dc2a6e66\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T16:48:49.533994+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"Operator\",\n        \"id\": \"62340158-8884-4d99-a6d0-02fdd0adac36\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T16:48:50.122234+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"Operator\",\n        \"id\": \"41912b77-77f4-4dc6-9b3b-5d02b9f321bf\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T16:48:50.570852+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"Operator\",\n        \"id\": \"2df69855-5967-445e-892e-4c4bdc86cd25\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T16:48:51.361688+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"Operator\",\n        \"id\": \"09b5cc6b-1134-4083-98ea-0e8f3fab19f9\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T16:49:30.619919+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"string\",\n        \"id\": \"1448f991-1529-4d61-9c20-b7034a2e6779\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T17:02:01.061454+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"string\",\n        \"id\": \"870edca6-2841-4dd3-bea6-652311528418\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T17:02:10.811922+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"string\",\n        \"id\": \"b7564ad3-17f8-4756-9c47-d2c9d143165e\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T17:02:12.496693+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"string\",\n        \"id\": \"2a582676-793a-4e43-9f6c-b8cfcc579c0b\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T17:02:25.695721+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"string\",\n        \"id\": \"8eff490a-40d7-4799-b0fa-911e1a875ac2\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T17:13:58.175385+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"Rakhesh Sharma\",\n        \"id\": \"17a14bd1-ec5e-4a16-a431-4490f1851596\",\n        \"rocket\": \"Sputnik\",\n        \"timestamp\": \"2022-02-17T19:08:00.717365+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"string\",\n        \"id\": \"21c54218-d0d3-4012-8d5c-44169c7c216b\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T19:32:22.18781+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"string\",\n        \"id\": \"9056ce27-d34b-45f2-a625-eedd57352792\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T19:34:27.899334+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"string\",\n        \"id\": \"c13e5902-dee7-4d20-be0c-93b0f875b050\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T19:34:37.62067+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"string\",\n        \"id\": \"7d9598a6-5aa5-4fac-a985-1c3c9f0db96f\",\n        \"rocket\": null,\n        \"timestamp\": \"2022-02-17T19:34:41.023248+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"Anup Sharma\",\n        \"id\": \"9c5ba389-de29-4d07-b9ad-38e52e8d26ba\",\n        \"rocket\": \"Sputnik VI\",\n        \"timestamp\": \"2022-02-17T19:41:46.338922+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"sherlock holmes\",\n        \"id\": \"94602b7d-33bf-4d1e-b863-865515b22924\",\n        \"rocket\": \"221B Baker Street\",\n        \"timestamp\": \"2022-02-17T22:10:07.527585+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"sherlock holmes\",\n        \"id\": \"1760cad9-51c1-479a-bedc-448e5735c4da\",\n        \"rocket\": \"221B Baker Street\",\n        \"timestamp\": \"2022-02-17T22:10:29.141622+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"sherlock holmes\",\n        \"id\": \"4baee8b4-89e6-4d6e-9cbc-0d0b23c73609\",\n        \"rocket\": \"221B Baker Street\",\n        \"timestamp\": \"2022-02-17T22:10:29.441638+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"sherlock holmes\",\n        \"id\": \"b0991bd3-2337-4f07-a12d-f571a31ebcd1\",\n        \"rocket\": \"221B Baker Street\",\n        \"timestamp\": \"2022-02-17T22:10:42.818858+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"sherlock holmes\",\n        \"id\": \"a8e9c4f8-7e46-4fad-a790-8d3e936e283e\",\n        \"rocket\": \"221B Baker Street\",\n        \"timestamp\": \"2022-02-17T22:10:44.515065+00:00\",\n        \"twitter\": null\n      },\n      {\n        \"name\": \"USER\",\n        \"id\": \"c2b359aa-42f1-4e19-9ba8-1e05c9e6b1d7\",\n        \"rocket\": \"rocket\",\n        \"timestamp\": \"2022-02-17T15:50:46.513419+00:00\",\n        \"twitter\": null\n      }\n    ]\n  }\n}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **{ Object (returning) }** to have property **returning**",
+      "time" : {
+        "start" : 1645415397611,
+        "stop" : 1645415397611,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "{\n  \"returning\": [\n    {\n      \"name\": \"Cypress\",\n      \"id\": \"8f3d51bc-ec2b-4a22-a441-95a11250a7e1\",\n      \"rocket\": \"Cypress auto stub rocket\",\n      \"timestamp\": \"2022-02-17T15:52:31.407177+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"Gabriel\",\n      \"id\": \"6625cf80-f929-4ea9-b07d-b046f1ebc8e4\",\n      \"rocket\": \"My awesome rocket\",\n      \"timestamp\": \"2022-02-17T15:52:45.820647+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"Bas\",\n      \"id\": \"cc079b9d-3098-4c6c-9d62-36358cf2ed57\",\n      \"rocket\": \"My awesome rocket\",\n      \"timestamp\": \"2022-02-17T15:53:20.277116+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"Bas\",\n      \"id\": \"214c9e50-3912-41bc-99fa-0370b686571d\",\n      \"rocket\": \"My awesome rocket\",\n      \"timestamp\": \"2022-02-17T15:53:46.324431+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"USER\",\n      \"id\": \"9b0b382f-5f36-4370-a2a7-428e6582519e\",\n      \"rocket\": \"rocket\",\n      \"timestamp\": \"2022-02-17T16:05:04.737962+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"USER\",\n      \"id\": \"e1c2300f-7e62-4813-b964-9ee6242e2461\",\n      \"rocket\": \"rocket\",\n      \"timestamp\": \"2022-02-17T16:05:48.094794+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"USER\",\n      \"id\": \"42f78a25-f66c-4f46-9db5-ff64e04c5f17\",\n      \"rocket\": \"rocket\",\n      \"timestamp\": \"2022-02-17T16:07:35.854289+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"USER\",\n      \"id\": \"ce8ba466-8de5-4af7-bd4b-7f785a9d96f5\",\n      \"rocket\": \"rocket\",\n      \"timestamp\": \"2022-02-17T16:10:23.160816+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"USER\",\n      \"id\": \"b33f0e67-7c98-44c0-bcc9-7ccce9668bd5\",\n      \"rocket\": \"rocket\",\n      \"timestamp\": \"2022-02-17T16:16:23.776295+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"USER\",\n      \"id\": \"974324c7-c3a4-45f1-aeb0-e4bf6afcbdd6\",\n      \"rocket\": \"rocket\",\n      \"timestamp\": \"2022-02-17T16:16:52.228846+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"Operator\",\n      \"id\": \"a93e5cbb-3d20-42d9-af0e-c14ba36f0a52\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T16:47:37.471553+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"Operator\",\n      \"id\": \"9786e336-d0f8-4d1e-9940-859c0f8c0124\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T16:48:07.849591+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"Operator\",\n      \"id\": \"9f4bcb07-5be8-4bdb-b3af-f84a183edc33\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T16:48:09.368103+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"Operator\",\n      \"id\": \"7e98183d-8e83-4db0-95ae-b736dc2a6e66\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T16:48:49.533994+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"Operator\",\n      \"id\": \"62340158-8884-4d99-a6d0-02fdd0adac36\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T16:48:50.122234+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"Operator\",\n      \"id\": \"41912b77-77f4-4dc6-9b3b-5d02b9f321bf\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T16:48:50.570852+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"Operator\",\n      \"id\": \"2df69855-5967-445e-892e-4c4bdc86cd25\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T16:48:51.361688+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"Operator\",\n      \"id\": \"09b5cc6b-1134-4083-98ea-0e8f3fab19f9\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T16:49:30.619919+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"1448f991-1529-4d61-9c20-b7034a2e6779\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T17:02:01.061454+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"870edca6-2841-4dd3-bea6-652311528418\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T17:02:10.811922+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"b7564ad3-17f8-4756-9c47-d2c9d143165e\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T17:02:12.496693+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"2a582676-793a-4e43-9f6c-b8cfcc579c0b\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T17:02:25.695721+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"8eff490a-40d7-4799-b0fa-911e1a875ac2\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T17:13:58.175385+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"Rakhesh Sharma\",\n      \"id\": \"17a14bd1-ec5e-4a16-a431-4490f1851596\",\n      \"rocket\": \"Sputnik\",\n      \"timestamp\": \"2022-02-17T19:08:00.717365+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"21c54218-d0d3-4012-8d5c-44169c7c216b\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T19:32:22.18781+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"9056ce27-d34b-45f2-a625-eedd57352792\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T19:34:27.899334+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"c13e5902-dee7-4d20-be0c-93b0f875b050\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T19:34:37.62067+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"7d9598a6-5aa5-4fac-a985-1c3c9f0db96f\",\n      \"rocket\": null,\n      \"timestamp\": \"2022-02-17T19:34:41.023248+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"Anup Sharma\",\n      \"id\": \"9c5ba389-de29-4d07-b9ad-38e52e8d26ba\",\n      \"rocket\": \"Sputnik VI\",\n      \"timestamp\": \"2022-02-17T19:41:46.338922+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"sherlock holmes\",\n      \"id\": \"94602b7d-33bf-4d1e-b863-865515b22924\",\n      \"rocket\": \"221B Baker Street\",\n      \"timestamp\": \"2022-02-17T22:10:07.527585+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"sherlock holmes\",\n      \"id\": \"1760cad9-51c1-479a-bedc-448e5735c4da\",\n      \"rocket\": \"221B Baker Street\",\n      \"timestamp\": \"2022-02-17T22:10:29.141622+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"sherlock holmes\",\n      \"id\": \"4baee8b4-89e6-4d6e-9cbc-0d0b23c73609\",\n      \"rocket\": \"221B Baker Street\",\n      \"timestamp\": \"2022-02-17T22:10:29.441638+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"sherlock holmes\",\n      \"id\": \"b0991bd3-2337-4f07-a12d-f571a31ebcd1\",\n      \"rocket\": \"221B Baker Street\",\n      \"timestamp\": \"2022-02-17T22:10:42.818858+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"sherlock holmes\",\n      \"id\": \"a8e9c4f8-7e46-4fad-a790-8d3e936e283e\",\n      \"rocket\": \"221B Baker Street\",\n      \"timestamp\": \"2022-02-17T22:10:44.515065+00:00\",\n      \"twitter\": null\n    },\n    {\n      \"name\": \"USER\",\n      \"id\": \"c2b359aa-42f1-4e19-9ba8-1e05c9e6b1d7\",\n      \"rocket\": \"rocket\",\n      \"timestamp\": \"2022-02-17T15:50:46.513419+00:00\",\n      \"twitter\": null\n    }\n  ]\n}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **[ Array(35) ]** to have property **length**",
+      "time" : {
+        "start" : 1645415397611,
+        "stop" : 1645415397611,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  {\n    \"name\": \"Cypress\",\n    \"id\": \"8f3d51bc-ec2b-4a22-a441-95a11250a7e1\",\n    \"rocket\": \"Cypress auto stub rocket\",\n    \"timestamp\": \"2022-02-17T15:52:31.407177+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"Gabriel\",\n    \"id\": \"6625cf80-f929-4ea9-b07d-b046f1ebc8e4\",\n    \"rocket\": \"My awesome rocket\",\n    \"timestamp\": \"2022-02-17T15:52:45.820647+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"Bas\",\n    \"id\": \"cc079b9d-3098-4c6c-9d62-36358cf2ed57\",\n    \"rocket\": \"My awesome rocket\",\n    \"timestamp\": \"2022-02-17T15:53:20.277116+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"Bas\",\n    \"id\": \"214c9e50-3912-41bc-99fa-0370b686571d\",\n    \"rocket\": \"My awesome rocket\",\n    \"timestamp\": \"2022-02-17T15:53:46.324431+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"USER\",\n    \"id\": \"9b0b382f-5f36-4370-a2a7-428e6582519e\",\n    \"rocket\": \"rocket\",\n    \"timestamp\": \"2022-02-17T16:05:04.737962+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"USER\",\n    \"id\": \"e1c2300f-7e62-4813-b964-9ee6242e2461\",\n    \"rocket\": \"rocket\",\n    \"timestamp\": \"2022-02-17T16:05:48.094794+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"USER\",\n    \"id\": \"42f78a25-f66c-4f46-9db5-ff64e04c5f17\",\n    \"rocket\": \"rocket\",\n    \"timestamp\": \"2022-02-17T16:07:35.854289+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"USER\",\n    \"id\": \"ce8ba466-8de5-4af7-bd4b-7f785a9d96f5\",\n    \"rocket\": \"rocket\",\n    \"timestamp\": \"2022-02-17T16:10:23.160816+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"USER\",\n    \"id\": \"b33f0e67-7c98-44c0-bcc9-7ccce9668bd5\",\n    \"rocket\": \"rocket\",\n    \"timestamp\": \"2022-02-17T16:16:23.776295+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"USER\",\n    \"id\": \"974324c7-c3a4-45f1-aeb0-e4bf6afcbdd6\",\n    \"rocket\": \"rocket\",\n    \"timestamp\": \"2022-02-17T16:16:52.228846+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"Operator\",\n    \"id\": \"a93e5cbb-3d20-42d9-af0e-c14ba36f0a52\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T16:47:37.471553+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"Operator\",\n    \"id\": \"9786e336-d0f8-4d1e-9940-859c0f8c0124\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T16:48:07.849591+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"Operator\",\n    \"id\": \"9f4bcb07-5be8-4bdb-b3af-f84a183edc33\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T16:48:09.368103+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"Operator\",\n    \"id\": \"7e98183d-8e83-4db0-95ae-b736dc2a6e66\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T16:48:49.533994+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"Operator\",\n    \"id\": \"62340158-8884-4d99-a6d0-02fdd0adac36\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T16:48:50.122234+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"Operator\",\n    \"id\": \"41912b77-77f4-4dc6-9b3b-5d02b9f321bf\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T16:48:50.570852+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"Operator\",\n    \"id\": \"2df69855-5967-445e-892e-4c4bdc86cd25\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T16:48:51.361688+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"Operator\",\n    \"id\": \"09b5cc6b-1134-4083-98ea-0e8f3fab19f9\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T16:49:30.619919+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"string\",\n    \"id\": \"1448f991-1529-4d61-9c20-b7034a2e6779\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T17:02:01.061454+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"string\",\n    \"id\": \"870edca6-2841-4dd3-bea6-652311528418\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T17:02:10.811922+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"string\",\n    \"id\": \"b7564ad3-17f8-4756-9c47-d2c9d143165e\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T17:02:12.496693+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"string\",\n    \"id\": \"2a582676-793a-4e43-9f6c-b8cfcc579c0b\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T17:02:25.695721+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"string\",\n    \"id\": \"8eff490a-40d7-4799-b0fa-911e1a875ac2\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T17:13:58.175385+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"Rakhesh Sharma\",\n    \"id\": \"17a14bd1-ec5e-4a16-a431-4490f1851596\",\n    \"rocket\": \"Sputnik\",\n    \"timestamp\": \"2022-02-17T19:08:00.717365+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"string\",\n    \"id\": \"21c54218-d0d3-4012-8d5c-44169c7c216b\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T19:32:22.18781+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"string\",\n    \"id\": \"9056ce27-d34b-45f2-a625-eedd57352792\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T19:34:27.899334+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"string\",\n    \"id\": \"c13e5902-dee7-4d20-be0c-93b0f875b050\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T19:34:37.62067+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"string\",\n    \"id\": \"7d9598a6-5aa5-4fac-a985-1c3c9f0db96f\",\n    \"rocket\": null,\n    \"timestamp\": \"2022-02-17T19:34:41.023248+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"Anup Sharma\",\n    \"id\": \"9c5ba389-de29-4d07-b9ad-38e52e8d26ba\",\n    \"rocket\": \"Sputnik VI\",\n    \"timestamp\": \"2022-02-17T19:41:46.338922+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"sherlock holmes\",\n    \"id\": \"94602b7d-33bf-4d1e-b863-865515b22924\",\n    \"rocket\": \"221B Baker Street\",\n    \"timestamp\": \"2022-02-17T22:10:07.527585+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"sherlock holmes\",\n    \"id\": \"1760cad9-51c1-479a-bedc-448e5735c4da\",\n    \"rocket\": \"221B Baker Street\",\n    \"timestamp\": \"2022-02-17T22:10:29.141622+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"sherlock holmes\",\n    \"id\": \"4baee8b4-89e6-4d6e-9cbc-0d0b23c73609\",\n    \"rocket\": \"221B Baker Street\",\n    \"timestamp\": \"2022-02-17T22:10:29.441638+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"sherlock holmes\",\n    \"id\": \"b0991bd3-2337-4f07-a12d-f571a31ebcd1\",\n    \"rocket\": \"221B Baker Street\",\n    \"timestamp\": \"2022-02-17T22:10:42.818858+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"sherlock holmes\",\n    \"id\": \"a8e9c4f8-7e46-4fad-a790-8d3e936e283e\",\n    \"rocket\": \"221B Baker Street\",\n    \"timestamp\": \"2022-02-17T22:10:44.515065+00:00\",\n    \"twitter\": null\n  },\n  {\n    \"name\": \"USER\",\n    \"id\": \"c2b359aa-42f1-4e19-9ba8-1e05c9e6b1d7\",\n    \"rocket\": \"rocket\",\n    \"timestamp\": \"2022-02-17T15:50:46.513419+00:00\",\n    \"twitter\": null\n  }\n]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **[ Array(35) ]** to have a length of **35**",
+      "time" : {
+        "start" : 1645415397611,
+        "stop" : 1645415397611,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "35"
+      }, {
+        "name" : "expected",
+        "value" : "35"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **8f3d51bc-ec2b-4a22-a441-95a11250a7e1** not to be empty",
+      "time" : {
+        "start" : 1645415397611,
+        "stop" : 1645415397611,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "8f3d51bc-ec2b-4a22-a441-95a11250a7e1"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **6625cf80-f929-4ea9-b07d-b046f1ebc8e4** not to be empty",
+      "time" : {
+        "start" : 1645415397611,
+        "stop" : 1645415397611,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "6625cf80-f929-4ea9-b07d-b046f1ebc8e4"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **cc079b9d-3098-4c6c-9d62-36358cf2ed57** not to be empty",
+      "time" : {
+        "start" : 1645415397611,
+        "stop" : 1645415397611,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "cc079b9d-3098-4c6c-9d62-36358cf2ed57"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **214c9e50-3912-41bc-99fa-0370b686571d** not to be empty",
+      "time" : {
+        "start" : 1645415397611,
+        "stop" : 1645415397611,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "214c9e50-3912-41bc-99fa-0370b686571d"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **9b0b382f-5f36-4370-a2a7-428e6582519e** not to be empty",
+      "time" : {
+        "start" : 1645415397612,
+        "stop" : 1645415397612,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "9b0b382f-5f36-4370-a2a7-428e6582519e"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **e1c2300f-7e62-4813-b964-9ee6242e2461** not to be empty",
+      "time" : {
+        "start" : 1645415397612,
+        "stop" : 1645415397612,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "e1c2300f-7e62-4813-b964-9ee6242e2461"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **42f78a25-f66c-4f46-9db5-ff64e04c5f17** not to be empty",
+      "time" : {
+        "start" : 1645415397612,
+        "stop" : 1645415397612,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "42f78a25-f66c-4f46-9db5-ff64e04c5f17"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **ce8ba466-8de5-4af7-bd4b-7f785a9d96f5** not to be empty",
+      "time" : {
+        "start" : 1645415397612,
+        "stop" : 1645415397612,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "ce8ba466-8de5-4af7-bd4b-7f785a9d96f5"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **b33f0e67-7c98-44c0-bcc9-7ccce9668bd5** not to be empty",
+      "time" : {
+        "start" : 1645415397613,
+        "stop" : 1645415397613,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "b33f0e67-7c98-44c0-bcc9-7ccce9668bd5"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **974324c7-c3a4-45f1-aeb0-e4bf6afcbdd6** not to be empty",
+      "time" : {
+        "start" : 1645415397613,
+        "stop" : 1645415397613,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "974324c7-c3a4-45f1-aeb0-e4bf6afcbdd6"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **a93e5cbb-3d20-42d9-af0e-c14ba36f0a52** not to be empty",
+      "time" : {
+        "start" : 1645415397613,
+        "stop" : 1645415397613,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "a93e5cbb-3d20-42d9-af0e-c14ba36f0a52"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **9786e336-d0f8-4d1e-9940-859c0f8c0124** not to be empty",
+      "time" : {
+        "start" : 1645415397613,
+        "stop" : 1645415397613,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "9786e336-d0f8-4d1e-9940-859c0f8c0124"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **9f4bcb07-5be8-4bdb-b3af-f84a183edc33** not to be empty",
+      "time" : {
+        "start" : 1645415397614,
+        "stop" : 1645415397614,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "9f4bcb07-5be8-4bdb-b3af-f84a183edc33"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **7e98183d-8e83-4db0-95ae-b736dc2a6e66** not to be empty",
+      "time" : {
+        "start" : 1645415397614,
+        "stop" : 1645415397614,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "7e98183d-8e83-4db0-95ae-b736dc2a6e66"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **62340158-8884-4d99-a6d0-02fdd0adac36** not to be empty",
+      "time" : {
+        "start" : 1645415397614,
+        "stop" : 1645415397614,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "62340158-8884-4d99-a6d0-02fdd0adac36"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **41912b77-77f4-4dc6-9b3b-5d02b9f321bf** not to be empty",
+      "time" : {
+        "start" : 1645415397614,
+        "stop" : 1645415397614,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "41912b77-77f4-4dc6-9b3b-5d02b9f321bf"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **2df69855-5967-445e-892e-4c4bdc86cd25** not to be empty",
+      "time" : {
+        "start" : 1645415397614,
+        "stop" : 1645415397614,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "2df69855-5967-445e-892e-4c4bdc86cd25"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **09b5cc6b-1134-4083-98ea-0e8f3fab19f9** not to be empty",
+      "time" : {
+        "start" : 1645415397614,
+        "stop" : 1645415397614,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "09b5cc6b-1134-4083-98ea-0e8f3fab19f9"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **1448f991-1529-4d61-9c20-b7034a2e6779** not to be empty",
+      "time" : {
+        "start" : 1645415397615,
+        "stop" : 1645415397615,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "1448f991-1529-4d61-9c20-b7034a2e6779"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **870edca6-2841-4dd3-bea6-652311528418** not to be empty",
+      "time" : {
+        "start" : 1645415397615,
+        "stop" : 1645415397615,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "870edca6-2841-4dd3-bea6-652311528418"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **b7564ad3-17f8-4756-9c47-d2c9d143165e** not to be empty",
+      "time" : {
+        "start" : 1645415397615,
+        "stop" : 1645415397615,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "b7564ad3-17f8-4756-9c47-d2c9d143165e"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **2a582676-793a-4e43-9f6c-b8cfcc579c0b** not to be empty",
+      "time" : {
+        "start" : 1645415397615,
+        "stop" : 1645415397615,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "2a582676-793a-4e43-9f6c-b8cfcc579c0b"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **8eff490a-40d7-4799-b0fa-911e1a875ac2** not to be empty",
+      "time" : {
+        "start" : 1645415397615,
+        "stop" : 1645415397615,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "8eff490a-40d7-4799-b0fa-911e1a875ac2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **17a14bd1-ec5e-4a16-a431-4490f1851596** not to be empty",
+      "time" : {
+        "start" : 1645415397615,
+        "stop" : 1645415397615,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "17a14bd1-ec5e-4a16-a431-4490f1851596"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **21c54218-d0d3-4012-8d5c-44169c7c216b** not to be empty",
+      "time" : {
+        "start" : 1645415397615,
+        "stop" : 1645415397615,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "21c54218-d0d3-4012-8d5c-44169c7c216b"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **9056ce27-d34b-45f2-a625-eedd57352792** not to be empty",
+      "time" : {
+        "start" : 1645415397615,
+        "stop" : 1645415397615,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "9056ce27-d34b-45f2-a625-eedd57352792"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **c13e5902-dee7-4d20-be0c-93b0f875b050** not to be empty",
+      "time" : {
+        "start" : 1645415397616,
+        "stop" : 1645415397616,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "c13e5902-dee7-4d20-be0c-93b0f875b050"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **7d9598a6-5aa5-4fac-a985-1c3c9f0db96f** not to be empty",
+      "time" : {
+        "start" : 1645415397616,
+        "stop" : 1645415397616,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "7d9598a6-5aa5-4fac-a985-1c3c9f0db96f"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **9c5ba389-de29-4d07-b9ad-38e52e8d26ba** not to be empty",
+      "time" : {
+        "start" : 1645415397616,
+        "stop" : 1645415397616,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "9c5ba389-de29-4d07-b9ad-38e52e8d26ba"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **94602b7d-33bf-4d1e-b863-865515b22924** not to be empty",
+      "time" : {
+        "start" : 1645415397616,
+        "stop" : 1645415397616,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "94602b7d-33bf-4d1e-b863-865515b22924"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **1760cad9-51c1-479a-bedc-448e5735c4da** not to be empty",
+      "time" : {
+        "start" : 1645415397616,
+        "stop" : 1645415397616,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "1760cad9-51c1-479a-bedc-448e5735c4da"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **4baee8b4-89e6-4d6e-9cbc-0d0b23c73609** not to be empty",
+      "time" : {
+        "start" : 1645415397616,
+        "stop" : 1645415397616,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "4baee8b4-89e6-4d6e-9cbc-0d0b23c73609"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **b0991bd3-2337-4f07-a12d-f571a31ebcd1** not to be empty",
+      "time" : {
+        "start" : 1645415397616,
+        "stop" : 1645415397616,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "b0991bd3-2337-4f07-a12d-f571a31ebcd1"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **a8e9c4f8-7e46-4fad-a790-8d3e936e283e** not to be empty",
+      "time" : {
+        "start" : 1645415397616,
+        "stop" : 1645415397616,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "a8e9c4f8-7e46-4fad-a790-8d3e936e283e"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **c2b359aa-42f1-4e19-9ba8-1e05c9e6b1d7** not to be empty",
+      "time" : {
+        "start" : 1645415397616,
+        "stop" : 1645415397616,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "c2b359aa-42f1-4e19-9ba8-1e05c9e6b1d7"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to deeply equal **200**",
+      "time" : {
+        "start" : 1645415397616,
+        "stop" : 1645415397616,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 41,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Crud da api graphql"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f65e28123d907f64.json",
+  "parameterValues" : [ ]
+}

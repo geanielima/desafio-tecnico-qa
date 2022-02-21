@@ -2,11 +2,11 @@
 
 const randomWord = cy.faker.lorem.words();
 
-describe("Testando todo list", () => {
+describe("Testing todo-list", () => {
   before(() => {
     cy.visit("/");
   });
-  it("Cadastrar itens na lista", () => {
+  it("Add items to the list", () => {
     for (let i = 0; i < 4; i++) {
       cy.get(".new-todo")
         .should("be.visible")
@@ -14,26 +14,38 @@ describe("Testando todo list", () => {
     }
   });
 
-  it("Excluir itens da lista", () => {
+  it("Delete items from list", () => {
     for (let i = 0; i < 2; i++) {
       cy.get(".destroy").invoke("show").first().click();
     }
   });
 
-  it("Marcas 1 item como completo", () => {
+  it("Marks 1 item as complete", () => {
     cy.get(".toggle").first().check().should("be.checked");
   });
 
-  it("Selecionar o filtro ‘Active’", () => {
-    cy.contains("a", "Active").should("be.visible").click();
+  it("Select the 'Active' filter", () => {
+    cy.contains("a", "Active")
+      .should("be.visible")
+      .and("have.text", "Active")
+      .click();
   });
 
-  it("Selecionar o filtro ‘Completed’", () => {
-    cy.contains("a", "Completed").should("be.visible").click();
+  it("Select the 'Completed' filter", () => {
+    cy.contains("a", "Completed")
+      .should("be.visible")
+      .and("have.text", "Completed")
+      .click();
   });
 
-  it("Estando com o filtro ‘All’ ativo clicar em ‘Clear completed’", () => {
-    cy.contains("a", "All").should("be.visible").click();
-    cy.get(".clear-completed").should("be.visible").click();
+  it("With the 'All' filter active, click on 'Clear completed'", () => {
+    cy.contains("a", "All")
+      .should("be.visible")
+      .and("have.text", "All")
+      .click();
+    cy.get(".clear-completed")
+      .should("be.visible")
+      .and("have.text", "Clear completed")
+      .click();
   });
 });

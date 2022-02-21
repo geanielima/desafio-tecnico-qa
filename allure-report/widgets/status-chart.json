@@ -1,0 +1,151 @@
+[ {
+  "uid" : "7589334c37010138",
+  "name" : "Add items to the list",
+  "time" : {
+    "start" : 1645415403779,
+    "stop" : 1645415405208,
+    "duration" : 1429
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce6576ee6795859f",
+  "name" : "With the 'All' filter active, click on 'Clear completed'",
+  "time" : {
+    "start" : 1645415406002,
+    "stop" : 1645415406236,
+    "duration" : 234
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33daa4fa1685bc0",
+  "name" : "update user",
+  "time" : {
+    "start" : 1645415399167,
+    "stop" : 1645415399339,
+    "duration" : 172
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c886361f1e657863",
+  "name" : "Marks 1 item as complete",
+  "time" : {
+    "start" : 1645415405545,
+    "stop" : 1645415405692,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "507023fdc3a9b5b5",
+  "name" : "update user with affected rows",
+  "time" : {
+    "start" : 1645415399342,
+    "stop" : 1645415399506,
+    "duration" : 164
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "267f3f3ba8966970",
+  "name" : "Select the 'Active' filter",
+  "time" : {
+    "start" : 1645415405696,
+    "stop" : 1645415405835,
+    "duration" : 139
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "88ac1ff565f0d9ad",
+  "name" : "Returns episodes, characters and location",
+  "time" : {
+    "start" : 1645415392401,
+    "stop" : 1645415393343,
+    "duration" : 942
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cb013259a282d25d",
+  "name" : "create user with affected rows",
+  "time" : {
+    "start" : 1645415397627,
+    "stop" : 1645415397803,
+    "duration" : 176
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "acf95a4354978478",
+  "name" : "Delete user",
+  "time" : {
+    "start" : 1645415397808,
+    "stop" : 1645415397985,
+    "duration" : 177
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f65e28123d907f64",
+  "name" : "create users",
+  "time" : {
+    "start" : 1645415396915,
+    "stop" : 1645415397619,
+    "duration" : 704
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50ea47153a53fc5",
+  "name" : "Delete user with affected rows",
+  "time" : {
+    "start" : 1645415397990,
+    "stop" : 1645415398161,
+    "duration" : 171
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df4f0cda773bfbdb",
+  "name" : "Delete items from list",
+  "time" : {
+    "start" : 1645415405216,
+    "stop" : 1645415405535,
+    "duration" : 319
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c039fc435e11c77c",
+  "name" : "returns the episodes that the filtered characters are participating in",
+  "time" : {
+    "start" : 1645415393350,
+    "stop" : 1645415393781,
+    "duration" : 431
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "885771ea4c234be9",
+  "name" : "Select the 'Completed' filter",
+  "time" : {
+    "start" : 1645415405840,
+    "stop" : 1645415405980,
+    "duration" : 140
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a32008bf03b82db3",
+  "name" : "read users",
+  "time" : {
+    "start" : 1645415398168,
+    "stop" : 1645415399164,
+    "duration" : 996
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

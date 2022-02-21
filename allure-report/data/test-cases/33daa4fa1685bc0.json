@@ -1,0 +1,142 @@
+{
+  "uid" : "33daa4fa1685bc0",
+  "name" : "update user",
+  "fullName" : "update user",
+  "historyId" : "9bd3bfc0692652a604b1c4be1d60511a",
+  "time" : {
+    "start" : 1645415399167,
+    "stop" : 1645415399339,
+    "duration" : 172
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 200 https://api.spacex.land/graphql/",
+      "time" : {
+        "start" : 1645415399183,
+        "stop" : 1645415399330,
+        "duration" : 147
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **{ Object (update_users) }** to have property **update_users**",
+      "time" : {
+        "start" : 1645415399337,
+        "stop" : 1645415399337,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "{\n  \"update_users\": {\n    \"returning\": [\n      {\n        \"id\": \"c53997cf-0e77-4d29-94ac-cdd15b79636d\",\n        \"name\": \"Daniel\",\n        \"rocket\": \"Cypress auto stub rocket\",\n        \"timestamp\": \"2022-02-17T15:52:31.407177+00:00\",\n        \"twitter\": null\n      }\n    ]\n  }\n}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **{ Object (returning) }** to have property **returning**",
+      "time" : {
+        "start" : 1645415399338,
+        "stop" : 1645415399338,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "{\n  \"returning\": [\n    {\n      \"id\": \"c53997cf-0e77-4d29-94ac-cdd15b79636d\",\n      \"name\": \"Daniel\",\n      \"rocket\": \"Cypress auto stub rocket\",\n      \"timestamp\": \"2022-02-17T15:52:31.407177+00:00\",\n      \"twitter\": null\n    }\n  ]\n}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **Daniel** to deeply equal **Daniel**",
+      "time" : {
+        "start" : 1645415399338,
+        "stop" : 1645415399338,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Daniel"
+      }, {
+        "name" : "expected",
+        "value" : "Daniel"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to deeply equal **200**",
+      "time" : {
+        "start" : 1645415399338,
+        "stop" : 1645415399338,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Crud da api graphql"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "33daa4fa1685bc0.json",
+  "parameterValues" : [ ]
+}

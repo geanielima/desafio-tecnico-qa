@@ -4,8 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open"
+    "test": "npx npm-run-all allure-results:clean allure-report:clean cy:run allure:report",
+    "cypress:open": "cypress open",
+    "cy:run": "cypress run --config video=false --env allure=true",
+    "allure:report": "allure generate allure-results",
+    "allure:generate": "allure generate allure-results",
+    "allure:open": "allure open allure-report",
+    "allure-results:clean": "RD/s/q allure-results",
+    "allure-report:clean": "RD/s/q allure-report"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +19,8 @@
   "dependencies": {
     "cypress": "^9.5.0",
     "faker": "^5.5.3"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.26.5"
   }
 }

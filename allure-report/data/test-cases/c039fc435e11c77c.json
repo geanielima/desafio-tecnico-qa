@@ -1,0 +1,103 @@
+{
+  "uid" : "c039fc435e11c77c",
+  "name" : "returns the episodes that the filtered characters are participating in",
+  "fullName" : "returns the episodes that the filtered characters are participating in",
+  "historyId" : "6d62bf2f549e85a155a200481b387292",
+  "time" : {
+    "start" : 1645415393350,
+    "stop" : 1645415393781,
+    "duration" : 431
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 200 https://rickandmortyapi.com/graphql",
+      "time" : {
+        "start" : 1645415393374,
+        "stop" : 1645415393777,
+        "duration" : 403
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **{ Object (characters) }** to have property **characters**",
+      "time" : {
+        "start" : 1645415393781,
+        "stop" : 1645415393781,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "{\n  \"characters\": {\n    \"info\": {\n      \"pages\": 22\n    },\n    \"results\": [\n      {\n        \"name\": \"Beth Sanchez\",\n        \"episode\": [\n          {\n            \"name\": \"Rixty Minutes\",\n            \"episode\": \"S01E08\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Beth Smith\",\n        \"episode\": [\n          {\n            \"name\": \"Pilot\",\n            \"episode\": \"S01E01\"\n          },\n          {\n            \"name\": \"Lawnmower Dog\",\n            \"episode\": \"S01E02\"\n          },\n          {\n            \"name\": \"Anatomy Park\",\n            \"episode\": \"S01E03\"\n          },\n          {\n            \"name\": \"M. Night Shaym-Aliens!\",\n            \"episode\": \"S01E04\"\n          },\n          {\n            \"name\": \"Meeseeks and Destroy\",\n            \"episode\": \"S01E05\"\n          },\n          {\n            \"name\": \"Rick Potion #9\",\n            \"episode\": \"S01E06\"\n          },\n          {\n            \"name\": \"The Rickshank Rickdemption\",\n            \"episode\": \"S03E01\"\n          },\n          {\n            \"name\": \"Rickmurai Jack\",\n            \"episode\": \"S05E10\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Beth Smith\",\n        \"episode\": [\n          {\n            \"name\": \"Close Rick-counters of the Rick Kind\",\n            \"episode\": \"S01E10\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Big Head Morty\",\n        \"episode\": [\n          {\n            \"name\": \"The Rickshank Rickdemption\",\n            \"episode\": \"S03E01\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Big Morty\",\n        \"episode\": [\n          {\n            \"name\": \"The Ricklantis Mixup\",\n            \"episode\": \"S03E07\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Body Guard Morty\",\n        \"episode\": [\n          {\n            \"name\": \"The Ricklantis Mixup\",\n            \"episode\": \"S03E07\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Bill\",\n        \"episode\": [\n          {\n            \"name\": \"Anatomy Park\",\n            \"episode\": \"S01E03\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Black Rick\",\n        \"episode\": [\n          {\n            \"name\": \"The Rickshank Rickdemption\",\n            \"episode\": \"S03E01\"\n          },\n          {\n            \"name\": \"The Ricklantis Mixup\",\n            \"episode\": \"S03E07\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Blue Footprint Guy\",\n        \"episode\": [\n          {\n            \"name\": \"Rickmancing the Stone\",\n            \"episode\": \"S03E02\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Blue Shirt Morty\",\n        \"episode\": [\n          {\n            \"name\": \"Close Rick-counters of the Rick Kind\",\n            \"episode\": \"S01E10\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Bobby Moynihan\",\n        \"episode\": [\n          {\n            \"name\": \"Rixty Minutes\",\n            \"episode\": \"S01E08\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Bootleg Portal Chemist Rick\",\n        \"episode\": [\n          {\n            \"name\": \"The Ricklantis Mixup\",\n            \"episode\": \"S03E07\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Brad\",\n        \"episode\": [\n          {\n            \"name\": \"Rick Potion #9\",\n            \"episode\": \"S01E06\"\n          },\n          {\n            \"name\": \"Ricksy Business\",\n            \"episode\": \"S01E11\"\n          },\n          {\n            \"name\": \"The ABC's of Beth\",\n            \"episode\": \"S03E09\"\n          },\n          {\n            \"name\": \"Amortycan Grickfitti\",\n            \"episode\": \"S05E05\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Brad Anderson\",\n        \"episode\": [\n          {\n            \"name\": \"Raising Gazorpazorp\",\n            \"episode\": \"S01E07\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Calypso\",\n        \"episode\": [\n          {\n            \"name\": \"Vindicators 3: The Return of Worldender\",\n            \"episode\": \"S03E04\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Campaign Manager Morty\",\n        \"episode\": [\n          {\n            \"name\": \"The Ricklantis Mixup\",\n            \"episode\": \"S03E07\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Chris\",\n        \"episode\": [\n          {\n            \"name\": \"The Ricks Must Be Crazy\",\n            \"episode\": \"S02E06\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Colossus\",\n        \"episode\": [\n          {\n            \"name\": \"Rickmancing the Stone\",\n            \"episode\": \"S03E02\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Commander Rick\",\n        \"episode\": [\n          {\n            \"name\": \"The Rickshank Rickdemption\",\n            \"episode\": \"S03E01\"\n          }\n        ]\n      },\n      {\n        \"name\": \"Concerto\",\n        \"episode\": [\n          {\n            \"name\": \"Pickle Rick\",\n            \"episode\": \"S03E03\"\n          }\n        ]\n      }\n    ]\n  }\n}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to deeply equal **200**",
+      "time" : {
+        "start" : 1645415393781,
+        "stop" : 1645415393781,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Testando api rick and morty"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c039fc435e11c77c.json",
+  "parameterValues" : [ ]
+}

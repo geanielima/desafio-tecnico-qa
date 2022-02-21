@@ -1,0 +1,142 @@
+{
+  "uid" : "acf95a4354978478",
+  "name" : "Delete user",
+  "fullName" : "Delete user",
+  "historyId" : "47d376978d621f429c0ed256d6be2a7d",
+  "time" : {
+    "start" : 1645415397808,
+    "stop" : 1645415397985,
+    "duration" : 177
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 200 https://api.spacex.land/graphql/",
+      "time" : {
+        "start" : 1645415397827,
+        "stop" : 1645415397975,
+        "duration" : 148
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **{ Object (delete_users) }** to have property **delete_users**",
+      "time" : {
+        "start" : 1645415397984,
+        "stop" : 1645415397984,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "{\n  \"delete_users\": {\n    \"returning\": [\n      {\n        \"id\": \"7bbe7714-e6ba-4ef9-ad8b-3abac730149e\",\n        \"name\": \"Geane\",\n        \"rocket\": \"ROCKET\",\n        \"timestamp\": \"2022-02-17T15:50:46.513419+00:00\",\n        \"twitter\": null\n      }\n    ]\n  }\n}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **{ Object (returning) }** to have property **returning**",
+      "time" : {
+        "start" : 1645415397984,
+        "stop" : 1645415397984,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "{\n  \"returning\": [\n    {\n      \"id\": \"7bbe7714-e6ba-4ef9-ad8b-3abac730149e\",\n      \"name\": \"Geane\",\n      \"rocket\": \"ROCKET\",\n      \"timestamp\": \"2022-02-17T15:50:46.513419+00:00\",\n      \"twitter\": null\n    }\n  ]\n}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **Geane** to deeply equal **Geane**",
+      "time" : {
+        "start" : 1645415397984,
+        "stop" : 1645415397984,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Geane"
+      }, {
+        "name" : "expected",
+        "value" : "Geane"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to deeply equal **200**",
+      "time" : {
+        "start" : 1645415397984,
+        "stop" : 1645415397984,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Crud da api graphql"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "acf95a4354978478.json",
+  "parameterValues" : [ ]
+}
