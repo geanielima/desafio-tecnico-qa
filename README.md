@@ -18,7 +18,7 @@ Passo a passo para executar os testes:
 
 <h2 align="center"> CI/CD </h2>
 
-em integração contínua foi utilizado o actions do git hub, que está configurado para rodar os testes a cada push enviado
+<li>na parte de integração contínua foi utilizado o actions do git hub, que está configurado para rodar os testes a cada push enviado<li>
 
 
 
