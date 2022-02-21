@@ -10,9 +10,10 @@ https://github.com/geanielima/desafio-tecnico-qa.git
 
 Passo a passo para executar os testes:
 
+
 Instalar as dependências do projeto utilizando o comando:
 
--npm install
+<li>npm install</li>
 
 
 
