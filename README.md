@@ -16,13 +16,18 @@ Passo a passo para executar os testes:
 <li>npm install</li>
 
 
+<h2 align="center"> CI/CD </h2>
+
+em integração contínua foi utilizado o actions do git hub, que está configurado para rodar os testes a cada push enviado
+
+
 
 <h2 align="center"> Relatórios </h2>
 
 <li>Allure Reports</li>
 <li>Allure Reports Plugin</li>
 
-para rodar o relatório no projeto basta utilizar o comando:
+para rodar o relatório no projeto basta utilizar os comandos:
 
 1. npm run test esse comando irá limpar os relatórios antigos do projeto, iniciar os testes em modo headless e em seguida gerar os resultados do relatório.
 2. em seguida para visualizar o relatório, podemos utilizar o comando npm run allure:open para visualizar o relatório.
