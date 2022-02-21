@@ -1,12 +1,7 @@
 name: Execução de testes na pipeline
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  schedule:
-    - cron: '0 9,11,15,18 * * 1,2,3,4,5'
+  [push]
 
 jobs:
   cypress-run:
