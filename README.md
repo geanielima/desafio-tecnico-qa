@@ -15,6 +15,9 @@ Passo a passo para executar os testes:
 
 <li>npm install</li>
 
+2. Executar os testes no modo interativo
+<li>npm run cypress:open<li>
+
 
 <h2 align="center"> CI/CD </h2>
 
